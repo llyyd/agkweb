@@ -14,7 +14,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
 // 暴露静态资源
-app.use(express.static('./public/dist'))
+app.use(express.static('./public'))
 
 app.use('/test', require('./router/TestRouter'))
 
