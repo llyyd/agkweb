@@ -13,6 +13,7 @@ app.use(express.json())
 // 解析表单数据中间件
 app.use(express.urlencoded({ extended: false }))
 
+// 暴露静态资源
 app.use(express.static('./public/dist'))
 
 app.use('/test', require('./router/TestRouter'))
